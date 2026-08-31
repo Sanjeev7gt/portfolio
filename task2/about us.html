@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+
+    <style>
+
+        /* Element Selector */
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #FFFFFF;
+            color: #4F5F4B;
+        }
+
+        h1 {
+            color: #5F7F5F;
+        }
+
+        h2 {
+            color: #6B8E6B;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+
+        /* ID Selector */
+        #about {
+            background-color: #F1F8EE;
+            text-align: center;
+            padding: 40px;
+            border-bottom: 1px solid #DDE8D8;
+        }
+
+        #about h1 {
+            margin-bottom: 10px;
+            font-size: 36px;
+        }
+
+
+        /* Class Selector */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .section {
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border: 1px solid #E5EBDD;
+        }
+
+
+        /* RGB Color */
+        .intro {
+            background-color: rgb(255, 253, 245);
+        }
+
+
+        /* Favourite Movies */
+        .movies {
+            background-color: #F1F8EE;
+        }
+
+
+        /* Favourite Cities */
+        .cities {
+            background-color: #FFF9E6;
+        }
+
+
+        /* General list styling */
+        li {
+            margin: 10px;
+            padding: 9px;
+        }
+
+
+        /* Ordered List - Movies */
+        .movie-list {
+            color: #5C765C;
+        }
+
+        .movie-list li {
+            background-color: rgb(249, 252, 247);
+            border: 1px solid #E2EBDD;
+            border-radius: 7px;
+        }
+
+
+        /* Unordered List - Cities */
+        .city-list {
+            color: #6C704F;
+        }
+
+        .city-list li {
+            background-color: #FFFDF5;
+            border: 1px solid #EEE7C9;
+            border-radius: 7px;
+        }
+
+
+        /* Pseudo-class Selector */
+        li:hover {
+            background-color: #EDF5E9;
+            cursor: pointer;
+        }
+
+
+        /* More specific cascading style */
+        .movie-list li:hover {
+            background-color: #E4F0DF;
+        }
+
+        .city-list li:hover {
+            background-color: #FFF4D2;
+        }
+
+
+        /* Link */
+        a {
+            color: #668566;
+            text-decoration: none;
+        }
+
+
+        /* Link Pseudo-class */
+        a:hover {
+            color: #8A9F6F;
+            text-decoration: underline;
+        }
+
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #F1F8EE;
+            color: #5F7F5F;
+        }
+
+        th, td {
+            border: 1px solid #DDE8D8;
+            padding: 12px;
+            text-align: center;
+        }
+
+        td {
+            background-color: #FFFFFF;
+        }
+
+
+        /* Footer */
+        .footer {
+            background-color: #FFFDF5;
+            text-align: center;
+            padding: 15px;
+            border-top: 1px solid #EEE7C9;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- About Us Header -->
+    <div id="about">
+
+        <h1>About Us</h1>
+
+        <p>
+            Get to know us, our interests and some of our favourite things.
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <!-- Introduction -->
+        <div class="section intro">
+
+            <h2>Who We Are</h2>
+
+            <p>
+                We are a group of students who enjoy watching movies,
+                travelling to new places and spending time with friends.
+                This page gives you a small look at our interests and
+                favourite things.
+            </p>
+
+        </div>
+
+
+        <!-- Favourite Movies -->
+        <div class="section movies">
+
+            <h2>Our Favourite Movies</h2>
+
+            <p>
+                Here are some of our favourite movies, arranged in
+                order of preference.
+            </p>
+
+            <ol class="movie-list">
+                <li>3 Idiots</li>
+                <li>Interstellar</li>
+                <li>Avengers: Endgame</li>
+                <li>Spider-Man</li>
+            </ol>
+
+        </div>
+
+
+        <!-- Favourite Cities -->
+        <div class="section cities">
+
+            <h2>Our Favourite Cities</h2>
+
+            <p>
+                These are some cities that we like or would love
+                to visit.
+            </p>
+
+            <ul class="city-list">
+                <li>Agra</li>
+                <li>Delhi</li>
+                <li>Jaipur</li>
+                <li>Mumbai</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Favourite Things -->
+        <div class="section intro">
+
+            <h2>Our Favourite Things</h2>
+
+            <table>
+
+                <tr>
+                    <th>Category</th>
+                    <th>Favourite</th>
+                </tr>
+
+                <tr>
+                    <td>Sport</td>
+                    <td>Cricket</td>
+                </tr>
+
+                <tr>
+                    <td>Movie</td>
+                    <td>3 Idiots</td>
+                </tr>
+
+                <tr>
+                    <td>Food</td>
+                    <td>Pizza</td>
+                </tr>
+
+                <tr>
+                    <td>City</td>
+                    <td>Jaipur</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <p>
+            About Us | <a href="#">Home</a>
+        </p>
+
+    </div>
+
+</body>
+</html>

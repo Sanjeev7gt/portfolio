@@ -1,0 +1,265 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Timetable</title>
+
+    <style>
+
+        /* Element Selector */
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: white;
+            color: #4F5F4B;
+        }
+
+        h1 {
+            color: #5F7F5F;
+        }
+
+        h2 {
+            color: #6B8E6B;
+        }
+
+        /* Header */
+        .header {
+            background-color: #F1F8EE;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #DDE8D8;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        /* Timetable */
+        .timetable {
+            background-color: #FFFDF5;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #E8E5D5;
+        }
+
+        .timetable h2 {
+            text-align: center;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: #EAF4E6;
+            color: #526B52;
+            padding: 14px;
+        }
+
+        td {
+            background-color: white;
+            padding: 14px;
+        }
+
+        th, td {
+            border: 1px solid #DDE8D8;
+            text-align: center;
+        }
+
+        /* Subject Colours */
+        .math {
+            background-color: #FFF9E6;
+        }
+
+        .science {
+            background-color: #F1F8EE;
+        }
+
+        .computer {
+            background-color: #F7F5EA;
+        }
+
+        .english {
+            background-color: #FFFDF5;
+        }
+
+        /* Break */
+        .break {
+            background-color: #FFF9E6;
+            font-weight: bold;
+        }
+
+        /* Lab */
+        .lab {
+            background-color: #EAF4E6;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #F1F8EE;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+
+        <h1>Academic Timetable</h1>
+
+        <p>
+            Weekly class schedule for students
+        </p>
+
+    </div>
+
+
+    <div class="container">
+
+        <div class="timetable">
+
+            <h2>Weekly Class Schedule</h2>
+
+            <table>
+
+                <!-- Table Head -->
+                <thead>
+
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+
+                </thead>
+
+
+                <!-- Table Body -->
+                <tbody>
+
+                    <tr>
+                        <td>9:00 - 10:00</td>
+
+                        <td class="math">Mathematics</td>
+
+                        <td class="science">Science</td>
+
+                        <td rowspan="2" class="lab">
+                            Computer Lab
+                        </td>
+
+                        <td class="math">Mathematics</td>
+
+                        <td class="english">English</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>10:00 - 11:00</td>
+
+                        <td class="english">English</td>
+
+                        <td class="math">Mathematics</td>
+
+                        <!-- Wednesday Computer Lab continues -->
+
+                        <td class="computer">Computer</td>
+
+                        <td class="math">Mathematics</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>11:00 - 11:30</td>
+
+                        <td colspan="5" class="break">
+                            Break
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>11:30 - 12:30</td>
+
+                        <td class="computer">Computer</td>
+
+                        <td class="english">English</td>
+
+                        <td class="math">Mathematics</td>
+
+                        <td class="science">Science</td>
+
+                        <td class="computer">Computer</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>12:30 - 1:30</td>
+
+                        <td class="science">Science</td>
+
+                        <td class="computer">Computer</td>
+
+                        <td class="english">English</td>
+
+                        <td class="math">Mathematics</td>
+
+                        <td class="science">Science</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>1:30 - 2:00</td>
+
+                        <td colspan="5" class="break">
+                            Lunch Break
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>2:00 - 3:00</td>
+
+                        <td class="english">English</td>
+
+                        <td class="science">Science</td>
+
+                        <td class="computer">Computer</td>
+
+                        <td class="english">English</td>
+
+                        <td class="computer">Computer</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+
+        <p>Academic Timetable | Weekly Schedule</p>
+
+    </div>
+
+</body>
+</html>
+```
