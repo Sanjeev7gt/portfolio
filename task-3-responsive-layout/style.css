@@ -1,0 +1,330 @@
+/* Box sizing */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Basic page settings */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: rgb(40, 40, 40);
+}
+
+
+/* Header */
+
+header {
+    background-color: rgb(46, 125, 50);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* Main layout */
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+
+/* Sidebar */
+
+aside {
+    width: 220px;
+    background-color: rgb(46, 125, 50);
+    color: white;
+    padding: 20px;
+    border: 1px solid rgb(35, 100, 40);
+}
+
+aside h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+/* Sidebar links */
+
+aside ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 8px;
+}
+
+aside a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+
+/* Sidebar hover effect */
+
+aside a:hover {
+    background-color: rgb(35, 100, 40);
+    padding-left: 15px;
+}
+
+
+/* Main content */
+
+main {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+/* Section headings */
+
+section h2 {
+    color: rgb(46, 125, 50);
+    margin-top: 0;
+}
+
+
+/* Product card */
+
+.product-card {
+    width: 320px;
+    margin: 10px 0 30px 0;
+    padding: 20px;
+    border: 1px solid rgb(150, 150, 150);
+    background-color: white;
+    transition: 0.2s;
+}
+
+
+/* Product card hover */
+
+.product-card:hover {
+    border-color: rgb(46, 125, 50);
+}
+
+
+/* Product image */
+
+.product-image {
+    height: 150px;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid rgb(170, 170, 170);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+
+/* Product image hover */
+
+.product-image:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+
+/* Product heading */
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+
+/* Product paragraph */
+
+.product-card p {
+    line-height: 1.5;
+}
+
+
+/* Button */
+
+button {
+    background-color: rgb(46, 125, 50);
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background-color: rgb(35, 100, 40);
+    transform: translateY(-2px);
+}
+
+
+/* Button click */
+
+button:active {
+    transform: translateY(1px);
+}
+
+
+/* Blog section */
+
+.blog-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Blog cards */
+
+.blog-card {
+    flex: 1;
+    min-height: 230px;
+    margin: 5px;
+    padding: 20px;
+    border: 1px solid rgb(170, 170, 170);
+    background-color: white;
+    transition: 0.2s;
+}
+
+
+/* Blog card hover */
+
+.blog-card:hover {
+    border-color: rgb(46, 125, 50);
+}
+
+
+/* Blog heading */
+
+.blog-card h3 {
+    color: rgb(46, 125, 50);
+    margin-top: 0;
+}
+
+
+/* Blog paragraph */
+
+.blog-card p {
+    line-height: 1.5;
+}
+
+
+/* Blog links */
+
+.blog-card a {
+    display: inline-block;
+    color: rgb(46, 125, 50);
+    text-decoration: none;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+
+/* Blog link hover */
+
+.blog-card a:hover {
+    color: rgb(35, 100, 40);
+    padding-left: 5px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+
+    /* Main container */
+
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+
+    /* Sidebar */
+
+    aside {
+        width: auto;
+        padding: 15px;
+    }
+
+
+    /* Horizontal sidebar menu */
+
+    aside ul {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    aside li {
+        margin-bottom: 0;
+    }
+
+    aside a {
+        padding: 8px 10px;
+    }
+
+
+    /* Main content */
+
+    main {
+        padding: 0;
+    }
+
+
+    /* Section spacing */
+
+    section {
+        margin-bottom: 25px;
+    }
+
+
+    /* Product card */
+
+    .product-card {
+        width: 100%;
+    }
+
+
+    /* Blog cards */
+
+    .blog-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .blog-card {
+        min-height: auto;
+        margin: 0;
+    }
+
+}
